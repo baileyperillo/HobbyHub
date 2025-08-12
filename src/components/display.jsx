@@ -1,0 +1,1 @@
+//used to display the posts on the App.jsx
