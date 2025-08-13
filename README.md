@@ -87,6 +87,9 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+This was a fun project to do, though I did find it difficult at times. I had to use ChatGpt to help debug. I was originally supposed to make the topic a forum NSFW works for women but it changed due to not having enough time to find NSFW work for women (and I would feel a little uncomfortable presenting this). Now it is anime and hentai that are targeted for a female audience. I plan to continue this so I can make it look nicer, complete some of the stretch goals, and add other features such as tags.
+Thank you so much for having me take part in this program.
+
 
 ## License
 
