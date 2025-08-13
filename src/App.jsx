@@ -3,29 +3,50 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Link } from 'react-router-dom'
-import { supabase } from '../client'
+import { supabase } from './client'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
 
 
 //pages
 import CreatePost from './pages/CreatePost'
 import EditPost from './pages/EditPost'
-import homepage from './pages/homepage'
+import Homepage from './pages/Homepage'
+import Postpage from './pages/postPage'
+
+//components
+import Navbar from './components/Navbar';
 
 function App() {
   const [count, setCount] = useState(0)
+  const [searchTerm, setSearchTerm] = useState('')
+
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
+
+  console.log(searchTerm);
 
   return (
     <>
 {/*     
     <h1>Final Project</h1> */}
   <div className="App">
-
+  
     <Router>
+      <div>
+      {/* Navbar at the top */}
+        <Navbar onSearch={handleSearch} />
       <Routes>
-        <Route path="/" element={<homepage />} />
-        <Route path="/Create post" element={<CreatePost />} />
+        <Route path="/" element={<Homepage searchTerm={searchTerm}/>} />
+        <Route path="/create" element={<CreatePost />} />
+        <Route path="/post/:id" element={<Postpage />} />
+        <Route path="/edit/:id" element={<EditPost />} />
         {/* <Route path="/item/:id" element={<ItemDetails />} /> */}
       </Routes>
+      </div>
     </Router>
   </div>
     </>

@@ -1,0 +1,44 @@
+input {
+    width: 300px;
+    height: 20px;
+    border-radius: 100px;
+}
+
+.navbar {
+  background-color: #F23591;  
+   display: flex;
+  align-items: center;  /* vertically center items */
+  justify-content: space-between; /* spread out left & right */
+  padding: 0 1rem; /* some horizontal padding */
+  margin-top: 0;
+  height: 80px; /* adjust as you like */
+}
+
+.nav-button {
+   margin-right: 10px; /* space between buttons */
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+}
+
+.nav-button:last-child {
+  margin-right: 0; /* no extra margin on last button */
+}
+
+.navbar-right {
+  display: flex;
+  gap: 10px; /* this adds spacing between flex items */
+}
+.search-btn {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 0.8 rem;
+    height: 30px;
+    
+}
+.site-title{
+    font-size: 20px;
+    color: pink;
+}

@@ -1,0 +1,11 @@
+.create-post-form .post-input,
+.create-post-form .post-textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  width: 75%;
+  font-size: 1rem;
+}
+.createPost {
+    margin: 20px;
+}
